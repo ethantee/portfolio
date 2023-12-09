@@ -3,15 +3,15 @@ import React from "react";
 const achievementsList = [
   {
     metric: "Projects",
-    value: "10+",
+    value: "2",
   },
   {
     metric: "Awards",
-    value: "3+",
+    value: "2",
   },
   {
-    metric: "Years",
-    value: "1",
+    metric: "Certifications",
+    value: "10+",
   },
 ];
 const AchievementsSection = () => {
@@ -21,7 +21,7 @@ const AchievementsSection = () => {
         {achievementsList.map((achievement) => {
           return (
             // eslint-disable-next-line react/jsx-key
-            <div className="flex flex-col items-center justify-center mx-4">
+            <div className="flex flex-col items-center justify-center mx-5">
               <h2 className="text-white text-4xl font-bold">
                 {achievement.value}
               </h2>
@@ -33,4 +33,5 @@ const AchievementsSection = () => {
     </div>
   );
 };
+
 export default AchievementsSection;
