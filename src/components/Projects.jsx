@@ -21,7 +21,7 @@ const projectData = [
 
 const Projects = () => {
     return (
-        <div id="projects">
+        <div id="projects" className="anchor-offset">
             <div className="text-4xl font-semibold mb-8">My Projects</div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-x-8 gap-y-4 md:gap-12 h-full w-full">
                 {projectData.map((project) => (
@@ -31,7 +31,8 @@ const Projects = () => {
                         description={project.description}
                         imgUrl={project.image}
                         gitUrl={project.gitUrl}
-                    />))}
+                    />
+                ))}
             </div>
         </div>
     );

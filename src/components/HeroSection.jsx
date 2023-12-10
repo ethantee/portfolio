@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import TypeWriter from "typewriter-effect";
 import { motion } from "framer-motion";
@@ -21,7 +22,7 @@ const HeroSection = () => {
                     			Kai Yau
                             </span>
                         </span>
-                        <br></br>
+                        <br />
                         <span className="text-7xl">I am
                             <TypeWriter
                                 options={{
